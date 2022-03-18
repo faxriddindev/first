@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- fontawesome -->
     <link
       rel="stylesheet"
@@ -18,7 +18,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav data-aos="flip-up">
         <ul>
           <li>TEE CLUB+</li>
           <li>SHOP+</li>
@@ -34,8 +34,10 @@
           <i class="fas fa-shopping-bag"></i>
         </div>
       </nav>
-      <div class="wrapper">
-        <div class="wrapper__text">
+      <div class="wrapper"   data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"  > 
+        <div class="wrapper__text"  >
           <h1>GET YOUR GEEK ON!</h1>
           <p>
             Come on in to score your fan favorite tees, figures, and geeky
@@ -47,7 +49,9 @@
       </div>
     </header>
     <div class="container">
-    <section id="info">
+    <section id="info" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500" >
       <div class="info__top">
 
 
@@ -85,7 +89,9 @@
 </div>
       </div>
     </section>
-    <section id="family">
+    <section id="family" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" >
         <h2>GET YOUR GEEK ON!</h2>
         <div class="family__boxs">
             <div class="family__box">
@@ -115,5 +121,10 @@
 
 
 </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
   </body>
 </html>
